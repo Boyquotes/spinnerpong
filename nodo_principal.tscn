@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://nodo_principal.gd" type="Script" id=1]
+[ext_resource path="res://assets/left_pallete.png" type="Texture" id=2]
+[ext_resource path="res://assets/right_pallete.png" type="Texture" id=3]
+[ext_resource path="res://assets/separator.png" type="Texture" id=4]
+[ext_resource path="res://assets/ball.png" type="Texture" id=5]
+
+[node name="nodo_principal" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="esquerda" type="Sprite" parent="."]
+
+transform/pos = Vector2( 67, 183 )
+texture = ExtResource( 2 )
+
+[node name="direita" type="Sprite" parent="."]
+
+transform/pos = Vector2( 577, 187 )
+texture = ExtResource( 3 )
+
+[node name="divisor" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 200 )
+texture = ExtResource( 4 )
+
+[node name="bola" type="Sprite" parent="."]
+
+transform/pos = Vector2( 320, 188 )
+texture = ExtResource( 5 )
+
+[node name="pontos_j1" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 250.0
+margin/top = 10.0
+margin/right = 290.0
+margin/bottom = 24.0
+text = "000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="pontos_j2" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 357.0
+margin/top = 10.0
+margin/right = 397.0
+margin/bottom = 24.0
+text = "000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
